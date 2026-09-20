@@ -1,0 +1,65 @@
+/*
+ * Style minimal du bloc comparatif [gf_offers], pensé pour être surchargé
+ * facilement depuis Elementor (CSS additionnel du widget Shortcode) une
+ * fois la charte graphique du site définie (cf. plan-action.md section 9).
+ */
+
+.gf-offers {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin: 24px 0;
+}
+
+.gf-offer-card {
+	position: relative;
+	flex: 1 1 200px;
+	border: 1px solid #e5e5e5;
+	border-radius: 8px;
+	padding: 16px;
+	text-align: center;
+	background: #fafafa;
+}
+
+.gf-offer-badge-platform {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: #666;
+	margin-bottom: 8px;
+}
+
+.gf-offer-badge-highlight {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-size: 11px;
+	background: #ff5a1f;
+	color: #fff;
+	padding: 2px 8px;
+	border-radius: 999px;
+}
+
+.gf-offer-price {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 12px;
+}
+
+.gf-offer-cta {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 16px;
+	background: #2d6cff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 6px;
+	font-weight: 600;
+}
+
+.gf-offer-cta:hover {
+	opacity: 0.9;
+	color: #fff;
+}

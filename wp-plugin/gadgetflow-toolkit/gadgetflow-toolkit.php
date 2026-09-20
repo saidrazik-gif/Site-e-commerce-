@@ -1,28 +1,31 @@
 <?php
 /**
  * Plugin Name:       GadgetFlow Toolkit
- * Description:       Fonctionnalités custom pour le site d'affiliation multi-réseaux : taxonomies (plateforme source, réseau d'affiliation...), colonnes de reporting admin, données structurées Schema.org et tracking GA4 des clics sortants.
- * Version:           1.0.0
+ * Description:       Fonctionnalités custom pour le site d'affiliation multi-réseaux : taxonomies (plateforme source, réseau d'affiliation...), colonnes de reporting admin, saisie manuelle des offres marchand + bloc comparatif [gf_offers], données structurées Schema.org et tracking GA4 des clics sortants.
+ * Version:           1.1.0
  * Requires PHP:      7.4
  * Requires Plugins:  woocommerce
  * Text Domain:       gadgetflow-toolkit
  *
- * Ce plugin ne fait AUCUN travail d'import/affiliation lui-même : il complète
- * le plugin d'affiliation multi-réseaux (Content Egg, cf. docs/plan-action.md
- * section 1.2) avec les éléments propres à ce site (taxonomies, reporting,
- * SEO, tracking).
+ * Gère nativement la saisie manuelle des offres par plateforme (Amazon/eBay/
+ * AliExpress/Autre) via le shortcode [gf_offers] — une alternative gratuite
+ * à un plugin d'import automatique type Content Egg (cf. docs/plan-action.md
+ * section 1.2). Migration vers un import automatique possible plus tard sans
+ * changer les taxonomies ni le rendu front.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-define( 'GADGETFLOW_TOOLKIT_VERSION', '1.0.0' );
+define( 'GADGETFLOW_TOOLKIT_VERSION', '1.1.0' );
 define( 'GADGETFLOW_TOOLKIT_PATH', plugin_dir_path( __FILE__ ) );
 define( 'GADGETFLOW_TOOLKIT_URL', plugin_dir_url( __FILE__ ) );
 
 require_once GADGETFLOW_TOOLKIT_PATH . 'includes/class-taxonomies.php';
 require_once GADGETFLOW_TOOLKIT_PATH . 'includes/class-admin-columns.php';
+require_once GADGETFLOW_TOOLKIT_PATH . 'includes/class-offers.php';
+require_once GADGETFLOW_TOOLKIT_PATH . 'includes/class-offers-shortcode.php';
 require_once GADGETFLOW_TOOLKIT_PATH . 'includes/class-schema.php';
 require_once GADGETFLOW_TOOLKIT_PATH . 'includes/class-tracking-assets.php';
 
@@ -42,6 +45,8 @@ function gadgetflow_toolkit_init() {
 
 	new GadgetFlow_Taxonomies();
 	new GadgetFlow_Admin_Columns();
+	new GadgetFlow_Offers();
+	new GadgetFlow_Offers_Shortcode();
 	new GadgetFlow_Schema();
 	new GadgetFlow_Tracking_Assets();
 }

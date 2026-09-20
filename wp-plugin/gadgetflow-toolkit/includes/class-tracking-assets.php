@@ -27,5 +27,12 @@ class GadgetFlow_Tracking_Assets {
 			GADGETFLOW_TOOLKIT_VERSION,
 			true
 		);
+
+		wp_enqueue_style(
+			'gadgetflow-offers',
+			GADGETFLOW_TOOLKIT_URL . 'assets/css/offers.css',
+			array(),
+			GADGETFLOW_TOOLKIT_VERSION
+		);
 	}
 }

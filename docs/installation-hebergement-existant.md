@@ -41,7 +41,11 @@ _Référence : plan-action.md section 1.3_
 
 _Référence : plan-action.md section 2.1_
 
-## Étape 4 — Plugin d'affiliation multi-réseaux (Content Egg)
+## Étape 4 — Plugin d'affiliation multi-réseaux
+
+Deux voies possibles selon le budget disponible au démarrage :
+
+### Option A — Content Egg (payant, import/sync automatique)
 
 - [ ] Acheter et installer **Content Egg** (CodeCanyon).
 - [ ] Activer les modules : Amazon, eBay, AliExpress, Awin, Admitad, Price Comparison, Product Import.
@@ -54,14 +58,26 @@ _Référence : plan-action.md section 2.1_
 
 _Référence : plan-action.md sections 1.2, 2.2, 2.3_
 
+### Option B — Démarrage gratuit (saisie manuelle via le plugin custom)
+
+Pour démarrer sans frais, le plugin `gadgetflow-toolkit` (étape 5) inclut désormais un système de saisie manuelle des offres, en remplacement de Content Egg :
+
+- [ ] Installer **ThirstyAffiliates** (gratuit, Extensions → Ajouter) pour cloaker les liens (`/go/nom-produit-amazon/`), forcer `nofollow sponsored`, et suivre les clics par lien.
+- [ ] Sur chaque fiche produit, remplir la meta box **« Où l'acheter — offres par plateforme »** (ajoutée par `gadgetflow-toolkit` v1.1.0) : prix, devise, lien tracké (généré via ThirstyAffiliates), réseau, badge optionnel — une ligne par plateforme (Amazon/eBay/AliExpress/Autre), laisser vide si pas d'offre.
+- [ ] Ajouter le shortcode `[gf_offers]` dans le template Elementor de fiche produit unique (widget « Shortcode ») pour afficher le bloc comparatif — les boutons sont déjà en `rel="nofollow sponsored noopener"` et déjà câblés pour le tracking GA4 (étape 7).
+- [ ] Migration vers Content Egg possible plus tard (une fois le trafic/revenu le justifie) sans perdre les taxonomies ni casser le rendu front.
+
+_Référence : plan-action.md section 1.2 ; code dans `wp-plugin/gadgetflow-toolkit/includes/class-offers.php` et `class-offers-shortcode.php`_
+
 ## Étape 5 — Installer le plugin custom du dépôt
 
-Le dossier [`wp-plugin/gadgetflow-toolkit/`](../wp-plugin/gadgetflow-toolkit/) de ce dépôt contient les taxonomies personnalisées, les colonnes de reporting admin, le Schema.org et le tracking GA4.
+Le dossier [`wp-plugin/gadgetflow-toolkit/`](../wp-plugin/gadgetflow-toolkit/) de ce dépôt contient les taxonomies personnalisées, les colonnes de reporting admin, la saisie manuelle des offres + bloc comparatif `[gf_offers]`, le Schema.org et le tracking GA4.
 
 - [ ] Compresser le dossier `wp-plugin/gadgetflow-toolkit/` en `.zip` (le dossier lui-même à la racine du zip, pas son contenu directement).
-- [ ] Dans l'admin WordPress : Extensions → Ajouter → Téléverser une extension → sélectionner le zip → Installer → Activer.
+- [ ] Dans l'admin WordPress : Extensions → Ajouter → Téléverser une extension → sélectionner le zip → Installer → Activer (si une version précédente est déjà active, la réactivation met simplement à jour le code, aucune donnée n'est perdue).
 - [ ] Vérifier après activation : les taxonomies « Plateforme », « Réseau », « Public cible », « Type de financement » apparaissent dans Produits, et 4 termes de plateforme (Amazon/eBay/AliExpress/Autre) sont pré-créés.
 - [ ] Vérifier que la colonne « Plateforme » apparaît bien dans la liste des produits (Produits → Tous les produits).
+- [ ] Vérifier qu'une meta box « Où l'acheter — offres par plateforme » apparaît en éditant une fiche produit.
 
 _Alternative sans FTP/zip_ : si SSH/WP-CLI devient disponible plus tard, `wp plugin install` n'est pas utilisable pour un plugin non publié sur wordpress.org — il faudra copier le dossier directement dans `wp-content/plugins/` via FTP/SFTP ou un gestionnaire de fichiers cPanel.
 

@@ -3,12 +3,13 @@
  * Données structurées Schema.org (Product + AggregateOffer + AggregateRating)
  * sur la fiche produit unique.
  *
- * Les valeurs (prix, note) sont lues depuis des champs meta `_gf_*` pour
- * rester découplées du plugin d'affiliation. Une fois Content Egg installé
- * et configuré, mappe ses propres meta keys vers ces champs `_gf_*`
- * (via un petit hook `save_post` côté Content Egg, ou en changeant
- * directement les `get_post_meta()` ci-dessous pour pointer vers les
- * meta natives de Content Egg) — cf. docs/plan-action.md section 2.2.
+ * `_gf_best_price` / `_gf_currency` sont dérivés automatiquement des offres
+ * saisies via GadgetFlow_Offers (prix le plus bas) — voir class-offers.php.
+ * `_gf_rating_value` / `_gf_rating_count` restent des champs éditoriaux à
+ * renseigner manuellement (note de la rédaction). Si un plugin d'import
+ * automatique (Content Egg) est installé plus tard, mappe ses propres meta
+ * keys vers ces champs `_gf_*` plutôt que de dupliquer cette logique —
+ * cf. docs/plan-action.md section 2.2.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {

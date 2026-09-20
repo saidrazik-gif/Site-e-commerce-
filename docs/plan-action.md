@@ -322,5 +322,5 @@ Tech, Maison connectée, Design & Déco, Outdoor & Voyage, Audio & Son, Bien-êt
 
 ## Annexes fournies dans ce dépôt
 
-- `code/functions-snippets.php` : snippets à intégrer (via un plugin de fonctionnalités ou le functions.php du thème enfant) pour les taxonomies personnalisées, la colonne de reporting « Plateforme source » dans l'admin, et un helper Schema.org (Product/AggregateRating).
-- `code/ga4-affiliate-tracking.js` : script de tracking des clics sortants par plateforme pour GA4.
+- `wp-plugin/gadgetflow-toolkit/` : plugin WordPress custom prêt à installer (taxonomies personnalisées, colonne de reporting « Plateforme source » dans l'admin, helper Schema.org Product/AggregateRating, tracking GA4 des clics sortants).
+- `docs/installation-hebergement-existant.md` : checklist pas-à-pas pour la mise en œuvre sur un WordPress déjà installé, dans l'ordre des sections de ce document.

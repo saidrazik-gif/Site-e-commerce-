@@ -75,52 +75,97 @@ Dernière mise à jour : [date]
 Cette politique de confidentialité décrit comment zettamall.com collecte,
 utilise et protège les informations des visiteurs de ce site.
 
-1. Données collectées
+1. Responsable de traitement
 
-- Données de navigation (pages visitées, durée de visite, appareil utilisé)
-  collectées via Google Analytics 4.
-- Adresse e-mail, si tu t'inscris volontairement à la newsletter.
-- Cookies techniques et de mesure d'audience (voir section 4).
+Le site zettamall.com est édité par [Ton nom / raison sociale], [adresse
+complète], joignable à [contact@zettamall.com]. [Ton nom] est responsable du
+traitement des données personnelles collectées sur ce site au sens du
+Règlement Général sur la Protection des Données (RGPD).
 
-Aucune donnée bancaire n'est collectée sur zettamall.com : tous les achats
-s'effectuent directement sur le site du marchand partenaire (Amazon, eBay,
-AliExpress...), qui applique sa propre politique de confidentialité.
+2. Données collectées et finalités
 
-2. Utilisation des données
+- Données de navigation (pages visitées, durée de visite, type d'appareil,
+  provenance) : collectées via Google Analytics 4, à des fins de mesure
+  d'audience et d'amélioration du site. Base légale : intérêt légitime,
+  ou consentement selon le choix fait dans le bandeau cookies.
+- Adresse e-mail : si tu t'inscris volontairement à la newsletter. Base
+  légale : consentement.
 
-Les données collectées permettent :
-- de mesurer l'audience et améliorer le contenu du site,
-- d'envoyer la newsletter aux personnes y ayant consenti,
-- de suivre la performance des liens d'affiliation par plateforme
-  (Amazon, eBay, AliExpress), de façon agrégée et non individuellement
-  identifiante.
+Aucune donnée bancaire n'est collectée sur zettamall.com : tout achat
+s'effectue directement sur le site du marchand partenaire (Amazon, eBay,
+AliExpress...), qui applique sa propre politique de confidentialité,
+indépendante de celle-ci.
 
-3. Liens d'affiliation
+3. Durée de conservation
+
+- Données de navigation (Google Analytics) : conservées 14 mois maximum,
+  conformément aux recommandations de la CNIL.
+- Adresse e-mail (newsletter) : conservée jusqu'à ta désinscription.
+
+4. Destinataires des données et sous-traitants
+
+Les données collectées peuvent être transmises aux prestataires suivants,
+strictement dans le cadre de leurs missions :
+- Google Ireland Limited (Google Analytics 4) — mesure d'audience.
+- Hostinger International Ltd. — hébergement du site.
+- [Ton prestataire d'emailing, ex. Mailchimp/ConvertKit] — gestion de la
+  newsletter, le cas échéant.
+- ThirstyAffiliates (plugin fonctionnant directement sur le site) — gestion
+  et redirection des liens d'affiliation ; ce plugin ne transmet aucune de
+  tes données personnelles à un tiers, il redirige uniquement ton clic vers
+  le site du marchand.
+
+Aucune donnée n'est vendue à des tiers.
+
+5. Transferts de données hors Union européenne
+
+Google Analytics 4 peut impliquer un transfert de données vers les
+États-Unis. Google encadre ces transferts via les Clauses Contractuelles
+Types de la Commission européenne. Plus d'informations sur la page de
+confidentialité de Google : https://policies.google.com/privacy
+
+6. Liens et cookies d'affiliation tiers
 
 Les fiches produits de zettamall.com contiennent des liens d'affiliation
 sponsorisés vers des marchands tiers (Amazon, eBay, AliExpress et autres
-partenaires). En cliquant sur ces liens puis en effectuant un achat, une
-commission peut être versée à zettamall.com, sans coût supplémentaire pour
-toi. Ces liens sont identifiés par l'attribut rel="sponsored".
+partenaires), via les réseaux Amazon Associates, eBay Partner Network,
+Admitad et Awin. En cliquant sur ces liens puis en effectuant un achat,
+une commission peut être versée à zettamall.com, sans coût supplémentaire
+pour toi. Ces liens sont identifiés par l'attribut rel="sponsored".
 
-4. Cookies
+En cliquant sur un lien d'affiliation, tu es redirigé vers le site du
+marchand partenaire, qui peut alors déposer ses propres cookies de suivi
+(pour attribuer la vente à zettamall.com) selon sa propre politique de
+confidentialité. zettamall.com ne contrôle pas ces cookies tiers déposés
+sur le site du marchand : nous t'invitons à consulter la politique de
+confidentialité du marchand concerné (Amazon, eBay, AliExpress) avant tout
+achat.
 
-zettamall.com utilise des cookies pour :
-- la mesure d'audience (Google Analytics 4),
-- le bon fonctionnement du site (préférence mode sombre, panier de
-  souhaits).
+7. Détail des cookies déposés directement par zettamall.com
 
-Tu peux configurer ton navigateur pour refuser les cookies ; certaines
-fonctionnalités du site pourraient alors être limitées.
+| Cookie                | Émetteur          | Finalité                         | Durée         |
+|------------------------|-------------------|-----------------------------------|---------------|
+| _ga, _ga_*             | Google Analytics  | Mesure d'audience                 | 13 mois       |
+| _gid                   | Google Analytics  | Distinction des visiteurs         | 24 heures     |
+| [cookie mode sombre]   | zettamall.com     | Mémorisation de ta préférence     | 1 an          |
+| [cookie liste d'envies]| zettamall.com     | Mémorisation de ta wishlist       | 1 an          |
 
-5. Tes droits
+Tu peux configurer ton navigateur pour refuser ces cookies ou les supprimer
+à tout moment ; le fonctionnement du site (hors mesure d'audience) reste
+possible sans eux.
 
-Conformément au Règlement Général sur la Protection des Données (RGPD), tu
-disposes d'un droit d'accès, de rectification et de suppression de tes
-données personnelles. Pour exercer ce droit, contacte-nous à l'adresse :
-[contact@zettamall.com]
+8. Tes droits
 
-6. Contact
+Conformément au RGPD, tu disposes d'un droit d'accès, de rectification,
+d'effacement, de limitation et d'opposition concernant tes données
+personnelles, ainsi que d'un droit à la portabilité. Pour exercer ces
+droits, contacte-nous à [contact@zettamall.com].
+
+Tu disposes également du droit d'introduire une réclamation auprès de la
+Commission Nationale de l'Informatique et des Libertés (CNIL) :
+https://www.cnil.fr/fr/plaintes
+
+9. Contact
 
 Pour toute question relative à cette politique de confidentialité :
 [contact@zettamall.com]
